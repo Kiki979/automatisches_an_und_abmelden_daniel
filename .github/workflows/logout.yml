@@ -1,12 +1,9 @@
 name: Run Selenium Logout Script
 
 on:
-  push:
-    branches:
-      - main
-  schedule:
-    - cron: '32 16 * * 1-5'
   workflow_dispatch:
+  schedule:
+    - cron: '0 16 * * 1-5'
 
 jobs:
   selenium-logout:
